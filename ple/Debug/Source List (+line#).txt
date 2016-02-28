@@ -1,0 +1,22 @@
+10	sum	start	1000
+20	first	lda	zero
+30	loop	ldx	index
+40	  	add	table,x
+50	  	sta	total
+60	  	lda	index
+70	  	add	three
+80	  	sta	index
+90	  	comp	count
+100	  	jlt	loop
+110	  	rsub	  
+120	  	.	  
+130	table	word	10
+140	  	word	30
+150	  	word	50
+160	  	word	70
+170	count	word	12
+180	three	word	3
+190	zero	word	0
+200	index	word	0
+210	total	resw	1
+220	  	end	first

@@ -1,0 +1,22 @@
+     sum start 1000
+first lda zero
+loop ldx index
+ adb table,x
+ sta  total
+ lda index
+ add three
+ sta index
+     comp count
+ jlt loop
+ rsub
+.
+table ewerd 10
+        word 30
+        word 50
+        word 70
+count word 12 
+three word 3
+zero word 0
+index word 0
+total resw 1
+ end first
