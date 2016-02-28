@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="EUC-KR"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="AdminMapper">
+
+
+    <select id ="getSeoul" resultType="Admin_AreaTableModel">
+    
+        SELECT id, location, restaurant, total_cnt, update_date
+        FROM crawl_data.seoul;
+        
+    </select>
+    <select id ="getBusan" resultType="Admin_AreaTableModel">
+    
+        SELECT id, location, restaurant, total_cnt, update_date
+        FROM crawl_data.busan;
+        
+    </select>
+    <select id ="getJeju" resultType="Admin_AreaTableModel">
+    
+        SELECT id, location, restaurant, total_cnt, update_date
+        FROM crawl_data.jeju;
+        
+    </select>
+    
+    <select id ="getGyeongGi" resultType="Admin_AreaTableModel">
+    
+        SELECT id, location, restaurant, total_cnt, update_date
+        FROM crawl_data.gyeonggi;
+        
+    </select>
+    
+    <select id ="getGangwon" resultType="Admin_AreaTableModel">
+    
+        SELECT id, location, restaurant, total_cnt, update_date
+        FROM crawl_data.gangwon;
+        
+    </select>
+    
+    <select id ="getGyeongsang" resultType="Admin_AreaTableModel">
+    
+        SELECT id, location, restaurant, total_cnt, update_date
+        FROM crawl_data.gyeongsang;
+        
+    </select>
+    <select id ="getJeonra" resultType="Admin_AreaTableModel">
+    
+        SELECT id, location, restaurant, total_cnt, update_date
+        FROM crawl_data.jeonra;
+        
+    </select>
+    <select id ="getChoongChung" resultType="Admin_AreaTableModel">
+    
+        SELECT id, location, restaurant, total_cnt, update_date
+        FROM crawl_data.choongchung;
+        
+    </select>
+    
+</mapper>
